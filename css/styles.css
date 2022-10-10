@@ -41,8 +41,7 @@ ul {
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -113,16 +112,16 @@ ul {
 }
 
 /* Header */
+
 .header {
-    border: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .heder-container {
     display: flex;
     align-items: center;
-    padding-bottom: 32px;
-    padding-top: 32px;
-
 }
 
 .header-nav {
@@ -264,6 +263,15 @@ ul {
     text-align: center;
 }
 
+.section.works {
+    padding-top: 0;
+}
+
+.work-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .works.list {
     display: flex;
@@ -307,8 +315,9 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-member img {
-    margin-bottom: 30px;
+.team-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-member .title {
@@ -330,21 +339,18 @@ ul {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-bottom: 30px;
 }
 
 /* Footer style*/
 .footer {
     background-color: var(---hero-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.footer-container {
-    display: inline-block;
-    padding: 60px 0;
-}
-
-.footer-container .logo {
+.footer .logo {
     margin-bottom: 20px;
+    display: block;
 }
 
 .footer .logo-studio {
@@ -378,9 +384,12 @@ ul {
     color: var(---accent-text-color);
 }
 
-.address .map,
-.address .mail {
+.address.list .link {
     margin-bottom: 9px;
+}
+
+.address.list .link:last-child {
+    margin-bottom: 0;
 }
 
 /* Section portfolio */
@@ -388,7 +397,7 @@ ul {
 
 .filters .button {
     background-color: var(---secondary-background-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    /*box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);*/
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -402,14 +411,8 @@ ul {
 .button.current {
     background-color: var(---accent-background-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
     color: var(---hero-text-color);
-    cursor: pointer;
-    font-family: inherit;
-    border: none;
+    
 }
 
 .filters .button:hover,
@@ -464,4 +467,7 @@ ul {
 
 .project img {
     display: block;
+}
+.project-text h2{
+    margin-bottom: 4px;
 }
